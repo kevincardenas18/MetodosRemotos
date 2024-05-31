@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f3f3; /* Un color de fondo suave */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Un color de texto más oscuro */
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-list > div {
+    border: 1px solid #ddd; /* Un borde más suave */
+    border-radius: 10px; /* Bordes más redondeados */
+    padding: 15px;
+    margin: 10px;
+    width: 220px; /* Un poco más ancho para mayor visibilidad */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Una sombra suave */
+    transition: all 0.3s ease; /* Una transición suave para animaciones */
+}
+
+#product-list > div:hover {
+    transform: translateY(-5px); /* Un pequeño efecto de elevación al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#product-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo verde oscuro al pasar el ratón */
+}
+
+button:active {
+    background-color: #3e8e41; /* Color de fondo verde más oscuro cuando está presionado */
+}
+
+/* Estilos para los botones dentro de #product-details */
+#product-details button {
+    margin-top: 10px; /* Espacio entre los botones */
+}
+
+#product-details button:first-child {
+    margin-right: 10px; /* Espacio entre el primer botón y los demás elementos */
+}

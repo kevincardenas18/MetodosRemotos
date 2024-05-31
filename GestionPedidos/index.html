@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <div id="product-list"></div>
+
+    <div id="product-details" class="hidden">
+        <h2>Detalles del Producto</h2>
+        <p><strong>ID:</strong> <span id="detail-id"></span></p>
+        <p><strong>Producto:</strong> <span id="detail-product"></span></p>
+        <p><strong>Stock:</strong> <span id="detail-stock"></span></p>
+        <input type="number" id="quantity" value="1" min="1">
+        <button onclick="pedirProducto()">Pedir</button>
+        <button onclick="cerrarDetalle()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
